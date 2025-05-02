@@ -2,7 +2,7 @@
 title: 'I Am Not New'
 description: 'There are times in life when you just have to look back, and even though you have been in an industry for a long time, there will still be people who think they are better than you or look at you different because your title is lower on the totem pole than theirs.'
 pubDate: 'June 6 2016'
-heroImage: '/images/blog/tattoo-code.png'
+heroImage: '/images/blog/not-new.png'
 tags: ['dev', 'frontend', 'life']
 ---
 
