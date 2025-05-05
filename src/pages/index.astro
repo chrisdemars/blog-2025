@@ -48,6 +48,7 @@ const last_posts = posts.slice(0, 3);
             title={post.data.title}
             img={post.data.heroImage}
             desc={post.data.description}
+            date={post.data.pubDate}
             url={'/blog/' + createSlug(post.data.title, post.slug)}
             target='_self'
             badge={post.data.badge}
@@ -56,9 +57,6 @@ const last_posts = posts.slice(0, 3);
         </>
       ))
     }
-  </div>
-  <div class='mt-4'>
-    <div class='text-3xl w-full font-bold mb-2'>Drop me a message!</div>
   </div>
   <ContactForm />
 </BaseLayout>
