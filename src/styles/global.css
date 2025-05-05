@@ -9,8 +9,11 @@ p {
     line-height: 2rem;
 }
 
-
-
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
+}
+
+.bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(132 204 22);
 }
