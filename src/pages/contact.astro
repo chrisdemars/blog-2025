@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactFormPlain from '@components/ContactFormPlain.astro';
+---
+
+<BaseLayout
+  title='About'
+  sideBarActiveItemID='about'>
+  <div>
+    <div class='text-3xl w-full font-bold mb-5'>Shoot Me A Message!</div>
+  </div>
+  <ContactFormPlain />
+</BaseLayout>
