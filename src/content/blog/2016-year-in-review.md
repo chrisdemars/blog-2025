@@ -1,7 +1,7 @@
 ---
 title: '2016 Year in Review'
 description: 'I can’t believe it is March already. It seems like we just started 2017…well, I Fguess we kinda did. Anyways, I finally got around to publishing my year in review for 2016 and I am pretty happy with how far I have come in a year. Enjoy!'
-pubDate: 'March 20 2017'
+pubDate: 'March 20, 2017'
 heroImage: '/images/blog/2016-year-review.png'
 tags: ['dev', 'frontend', 'life']
 ---

@@ -15,8 +15,6 @@ const tag_url = url.split('/').slice(0, -1).join('/') + '/tag';
 const displayDate = dayjs(pubDate).format('ll');
 ---
 
-{pubDate}
-
 <div
   class='rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]'>
   <a
@@ -37,7 +35,13 @@ const displayDate = dayjs(pubDate).format('ll');
       }
       <div class='grow w-full'>
         <p class='card-date text-gray-500 text-sm'>
-          Published on: {displayDate}
+          {
+            pubDate && (
+              <p class='text-sm text-gray-500'>
+                Published on: {pubDate.toLocaleDateString()}
+              </p>
+            )
+          }
         </p>
         <h1 class='text-xl font-bold'>
           {title}
