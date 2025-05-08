@@ -41,7 +41,13 @@ import { Image } from 'astro:assets';
         )
       }
       <h1 class='title my-2 text-4xl font-bold'>{title}</h1>
-      {pubDate && <time>{displayDate}</time>}
+      {
+        pubDate.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        })
+      }
       <br />
       {badge && <div class='badge badge-secondary my-1'>{badge}</div>}
       {
@@ -58,7 +64,15 @@ import { Image } from 'astro:assets';
         updatedDate && (
           <div>
             {' '}
-            Last updated on <time>{updatedDate}</time>{' '}
+            Last updated on{' '}
+            <time>
+              {' '}
+              {pubDate.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+              })}
+            </time>{' '}
           </div>
         )
       }
