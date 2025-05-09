@@ -3,7 +3,7 @@ title: 'Senior Developer Advocate'
 description: 'Being a part of the community and building relationships has been one of the best parts...'
 pubDate: 'July 06 2023'
 heroImage: '/images/blog/vue-conf-nola.png'
-tags: ['a11y', 'DevRel']
+tags: ['DevRel']
 ---
 
 Being a part of the community and building relationships has been one of the best parts of being a developer advocate. I have been a front end developer since the mid-90's and specialize in different aspects of the front end.
