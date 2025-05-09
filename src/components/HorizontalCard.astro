@@ -37,7 +37,7 @@ const tag_url = url.split('/').slice(0, -1).join('/') + '/tag';
         <p class='card-date text-gray-500 text-sm'>
           {
             pubDate && (
-              <p class='text-sm text-gray-500'>
+              <p class='text-sm text-lime-500'>
                 Published on:{' '}
                 {pubDate.toLocaleDateString('en-US', {
                   year: 'numeric',
@@ -50,7 +50,11 @@ const tag_url = url.split('/').slice(0, -1).join('/') + '/tag';
         </p>
         <h1 class='text-xl font-bold'>
           {title}
-          {badge && <div class='badge badge-secondary mx-2'>{badge}</div>}
+          {
+            badge && (
+              <div class='badge badge-accent badge-outline mx-2'>{badge}</div>
+            )
+          }
         </h1>
         <p class='py-1 text-1xl'>{desc}</p>
 
@@ -60,7 +64,7 @@ const tag_url = url.split('/').slice(0, -1).join('/') + '/tag';
               tags.map((tag) => (
                 <a
                   href={`${tag_url}/${tag}`}
-                  class='badge badge-outline'>
+                  class='badge badge-outline badge badge-dash badge-accent mx-2'>
                   {tag}
                 </a>
               ))

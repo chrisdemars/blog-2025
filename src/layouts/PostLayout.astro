@@ -16,7 +16,6 @@ const {
   tags = [],
 } = Astro.props;
 dayjs.extend(localizedFormat);
-const displayDate = dayjs(pubDate).format('ll');
 import { Image } from 'astro:assets';
 ---
 
@@ -49,7 +48,11 @@ import { Image } from 'astro:assets';
         })
       }
       <br />
-      {badge && <div class='badge badge-secondary my-1'>{badge}</div>}
+      {
+        badge && (
+          <div class='badge badge-accent badge-outline my-1'>{badge}</div>
+        )
+      }
       {
         tags &&
           tags.map((tag) => (
